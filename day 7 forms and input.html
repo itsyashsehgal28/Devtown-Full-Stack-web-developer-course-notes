@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>Forms in html</title>
+    </head>
+
+    <body>
+        <!-- Subscript and SuperScript -->
+        <p>3 <sub>3</sub> is an example of subscript</p> 
+        <p>3 <sup>3</sup> is an example of superscript</p>
+
+        <!-- Block Scope elements are those which take whole screen or whole line like div , aside , p, h1- h6 , ol , ul table  -->
+        <!-- inline elements are those which only take the space of the element it doesnt waste space like span,img,a,strong ,em,br  -->
+        <hr>
+        <h5>Instagram Login Page</h5> 
+        <label>Username</label>
+        <input type="text" , placeholder="Enter username" , value="its_yashsehgal28"> 
+        <!--input gives you a box and type defines what can we say in the box-->
+        <!-- VALUE IN INPUT IS FOR backend value  -->
+
+        <br>
+        <label>Password</label>
+        <input type="password", placeholder="Enter password" >
+        <!--placeholder-inside the input box to define what to write for the user-->
+
+        <h4>Notice in the first snippet username and password arent in one line it is not looking good so now </h4>
+
+        <h5>Instagram Login Page</h5> 
+        <label>Username</label>
+        <input type="text" , minlength="2" , maxlength="5">
+        <!-- we can also define min and max length -->
+        <br>
+        <label>Password</label>&nbsp; <!-- &nbsp; is used to give a space -->
+        <input type="password">
+        <br>
+        <br>
+        <hr>
+
+        <h4>in radion button all can be selected this is a drawback</h4>
+        <label>Gender</label>
+        <input type="radio">male
+        <input type="radio">female
+        <input type="radio">others
+        <br><br>
+        
+        <!-- DRAWBACK OF RADIO BUTTON IS I CAN SELECT ALL SO TO OVERCOME THAT WE HAVE NAME ATTRIBUTE -->
+        <h4>Trying again to overcome the radio button problem using name attribute</h4>
+        <label>Gender</label>
+        <input type="radio", name="gender", value="male" , checked><label>male</label>  
+        <!-- checked is for default value  -->
+        <input type="radio", name="gender", value="female"><label>female</label>
+        <input type="radio", name="gender", value="others"><label>others</label>
+        <!-- all should have the same name like group by -->
+        <!-- value is used to send value for BACKEND PURPOSES for processing  -->
+        <br>
+        <br>
+        <hr>
+
+        <!-- shortcut for controlling cursor for more than one line  
+        like writing like this is CTRL+ALT+ARROW KEY   
+        like writing like this is CTRL+ALT+ARROW KEY
+        like writing like this is CTRL+ALT+ARROW KEY  -->
+        
+        <label>Comments</label>
+        <textarea placeholder="Write your comments"></textarea>
+        <!-- Bigger area than input and can be dragged -->
+
+        
+    </body>
+
+</html>

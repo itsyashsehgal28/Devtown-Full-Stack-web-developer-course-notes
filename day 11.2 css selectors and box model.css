@@ -1,0 +1,129 @@
+/* 1. ELEMENT SELECTOR 
+where we select the element like <h2>This is an H2 tag - count 1</h2> is an element */
+
+/* BODY is also an element we can select the whole body too */
+/* h2{
+    color: yellow;
+    background-color: black;
+} */
+
+/*
+p{
+    color: yellow;
+    background-color: black;
+} 
+*/
+
+
+
+/* 2. ELEMENT SELECTOR LIST 
+IS WHEN YOU SELECT A NUMBER OF ELEMENTS ALWAYS SEPERATED WITH COMMAS (,) 
+*/
+/* h2,p{
+    color: yellow;
+    background-color: black;
+} */
+
+
+
+
+/* 3. UNIVERSAL SELECTOR WORKS ON EVERY ELEMENT (*) 
+if we use body tag we only have 1 border because there is only 1 body but if we use universal selector it gives 3 borders
+    >>one for whole html
+    >>one for body tag
+    >>one for element tag
+*/
+
+/* 
+*{
+    color: red;
+    background-color: black;
+    border: 2px solid white;
+     solid dashed and dotted , px is pixel for width of the border 
+}
+*/
+
+
+
+/* 4. ID SELECTOR (#) */
+/* #H2COUNT3{
+    color: pink;
+    background-color: black;
+    border: 2px dotted green;
+} */
+
+
+/* 5. CLASS SELECTOR (.) */
+.H2CLASS{
+    color: aqua;
+    background-color: black;
+    border: 10px red solid;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+/* UNITS IN CSS
+    >> PIXELS (PX)
+    >> PERCENTAGE(%)
+    >> VIEW HEIGHT (VH) ---> USED IN MEDIA QUERIES HOW MUCH IS THE SCREEN HEIGHT
+    >> VIEW WIDTH (VW)  ---> USED IN MEDIA QUERIES HOW MUCH IS THE SCREEN WIDTH
+    >> REM
+    >> EM
+*/
+
+
+/* 6. DESCENDANT SELECTOR LIST */
+li a {
+    /* parent tag is li so items inside li that are anchor tag */
+    color: blue;
+    background-color: pink;
+}
+
+/*
+ b i{
+    color: white;
+    background-color: black;
+}
+
+
+i{
+    color: white;
+    background-color: pink;
+}
+*/
+
+/* 7. DIRECT CHILD (>) */
+b > i{
+    color: white;
+    background-color: black;
+}
+
+/* NO STYLE WILL BE APPLIED BECAUSE I IS NOT A DIRECT CHILD OF BOLD TAG */
+
+/* INLINE STYLE HAS THE HIGHEST PRIORITY , THEN EXTERNAL , THEN INTERNAL AT LAST  */
+
+h4{
+    border: 2px solid black;
+}
+
+h6{
+    /* PADDING IS FOR THE INSIDE OF THE BOX  SPACE FROM THE INSIDE */
+    border: 2px solid black;
+    /* padding: 20px; this is from all directions*/
+    /* we can also have padding from specific directions */
+    
+    /* padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    padding-left: 20px; */
+    
+    padding: 5px 10px 15px 20px;
+    /* this is on clockwise direction both are same */
+}
+
+h5{
+    border: 2px solid black;
+    margin: 5px 10px 15px 20px;
+    /* works in the same way as clockwise like padding but leaves space outside the border */
+}

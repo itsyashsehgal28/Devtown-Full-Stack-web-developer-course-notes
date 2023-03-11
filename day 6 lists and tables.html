@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <title>list and input tags in html</title>
+    </head>
+
+    <body>
+        <!-- types of lists:
+            >> ordered lists 
+            >> unordered lists
+            >> descriptive / description lists
+         -->
+
+         Ordered lists:
+        <ol type="A" , start="5">   <!--type : 1(default) || A || a || I(roman) || i(small roman)   START means from which position-->
+            <li>padai</li>
+            <li>exam</li>
+            <li>job</li>
+        </ol>
+        <br/>  <!---for a new line -->
+        <hr/>  <!---for a horizontal line -->
+
+        Unordered Lists:
+        <ul>
+            <li>yash</li>
+            <li>shagun</li>
+            <li>sehgal</li>
+        </ul>
+        <br/>
+        <hr/>
+    
+        Nested ordered list
+        <ol>
+            <li>outer one</li>
+            <li>outer two</li>
+                <ol>
+                    <li>inner one</li>
+                    <li>inner two</li>
+                </ol>
+            <li>outer three</li>
+        </ol>
+
+        <br/>
+        <hr/>
+
+        Description or descriptive lists
+        <dl>
+            <dt style="text-decoration: underline;"">HTML</dt> <!--description term , this is inline css-->
+            <dd>Hyper Text Markup Language</dd> <!--description definition-->
+
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheets</dd> <!-- TYPES : inline , internal , external css-->
+
+            <dt>JS</dt>
+            <dd>javascript</dd>
+        </dl>
+        
+        <br/>
+        <hr/>
+
+        Tables
+        <table border="1" , style="border-collapse: collapse;">
+            <tr> <!--table row-->
+                <th>first</th>  <!--table heading || COLUMN HEADINGS-->
+                <th>second</th>
+                <th>third</th>
+            </tr>
+            <tr>
+                <td rowspan="2">one</td> <!--table data || COLUMNS-->
+                <td colspan="2">two</td>
+                <td>three</td>
+            </tr>
+            <tr>
+                <td colspan="1" >four</td>
+            </tr>
+            <tr>
+                <td>five</td>
+                <td colspan="2">six</td>
+            </tr>
+        </table>
+
+
+
+
+    </body>
+
+
+</html>

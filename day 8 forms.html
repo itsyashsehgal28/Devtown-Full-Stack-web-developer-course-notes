@@ -1,0 +1,145 @@
+<html>
+<head><title>Forms in HTML</title></head>
+
+<body>
+    <form>
+        <label>Username</label>
+        <input type="text" , placeholder="Enter Username" , required>
+        <!-- REQUIRED keyword makes the value to be required , gives out a prompt -->
+        <br/>
+        <br/>
+        <label>Password</label>
+        <input type="password" , placeholder="Enter Password" , required>
+        <br/>
+        <br/>
+        <label>DOB</label>
+        <input type="date">
+        <br>
+        <br>
+        <label>Gender</label>
+        <input type="radio", name="gender"><label>Male</label>
+        <input type="radio", name="gender"><label>Female</label>       
+        <input type="radio", name="gender"><label>Others</label>   
+        <!-- In Radio Button after grouping using NAME only 1 can be selected -->
+        <br/>
+        <br/>
+        <label>Choose the Languages you are aware about :</label>
+        <input type="checkbox" , name="language"><label>C</label>        
+        <input type="checkbox" , name="language"><label>C++</label>    
+        <input type="checkbox" , name="language"><label>Java</label>    
+        <input type="checkbox" , name="language"><label>Python</label>    
+        <br>        
+        <br>  
+        <label>Choose the course you are in :</label>
+        <select><!-- gives you a dropdown list -->
+            
+            <option></option><!--dummy option-->
+            <option>Web Development</option>                 
+            <option>Artificial Intelligence</option>
+            <option>Machine Learning</option>
+            <option>Big Data Analysis</option>
+            <option>Data Science</option>
+            <!-- we are not using name attribute here because , see in all other tags they werent enclosed withing
+                 any other tag like only input tags were there and they were independent but in 
+                 OPTIONS it is already grouped under the SELECT tag so no need for name attribute here 
+            -->
+        </select>
+        <br>
+        <br>
+        <input type="file" , placeholder="Upload Resume">
+        <!-- type FILE for uploading a file -->
+        <input type="submit">       
+        <input type="reset">
+
+        
+        <!-- --------------------------------------------------------------------------------------------------------------
+        -------------------------------------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------------------------------------- -->
+        <br><br>
+        <hr>
+        <br><br>
+        <table>
+            
+            <tr>
+                <td><label>Username</label></td>
+                <td><input type="text" , placeholder="Enter Username" , required></td>
+            </tr>
+
+            <tr>
+                <td><label>Password</label></td>
+                <td><input type="password" , placeholder="Enter Password" , required></td>
+            </tr>
+
+            <tr>
+                <td><label>DOB</label></td>
+                <td><input type="date"></td>
+            </tr>
+
+            <tr>
+                <td><label>Gender</label></td>
+                <td><input type="radio", name="gender"><label>Male</label>
+                    <input type="radio", name="gender"><label>Female</label>       
+                    <input type="radio", name="gender"><label>Others</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>Choose the Languages you are aware about :</label></td>
+                <td><input type="checkbox" , name="language"><label>C</label>        
+                    <input type="checkbox" , name="language"><label>C++</label>    
+                    <input type="checkbox" , name="language"><label>Java</label>    
+                    <input type="checkbox" , name="language"><label>Python</label>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td><label>Choose the course you are in :</label></td>
+                <td><select><!-- gives you a dropdown list -->
+            
+                    <option></option><!--dummy option-->
+                    <option>Web Development</option>                 
+                    <option>Artificial Intelligence</option>
+                    <option>Machine Learning</option>
+                    <option>Big Data Analysis</option>
+                    <option>Data Science</option>
+                    <!-- we are not using name attribute here because , see in all other tags they werent enclosed withing
+                         any other tag like only input tags were there and they were independent but in 
+                         OPTIONS it is already grouped under the SELECT tag so no need for name attribute here 
+                    -->
+                </select></td>
+            </tr>
+
+            <tr>
+                <td><label>Submit</label></td>
+                <td><input type="submit"></td>          
+            </tr>
+
+            <tr>
+                <td><label>Reset</label></td>
+                <td><input type="reset"></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </table>
+
+
+
+
+    </form>
+
+
+
+
+    
+</body>
+
+
+
+</html>

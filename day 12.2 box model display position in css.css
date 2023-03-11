@@ -1,0 +1,57 @@
+h3{
+    color: aqua;
+    background-color: black;
+    border: 2px solid red;
+    padding: 0 0 0 15px;
+    /* this is for left padding or i could have used left padding only (the property) */
+    margin: 10px 0 0 0;
+    /* this is for top margin or i could have used top margin only (the property) */
+
+    /* TOP RIGHT BOTTOM LEFT THATS HOW IT WORKS 
+        CLOCKWISE CLOCKWISE CLOCKWISE 
+    */
+}
+
+/*  SPACINGS:
+    padding is internal to box
+    margin is external to box 
+*/
+
+.testblock{
+    display: block;
+    color: white;
+    background-color: red;
+    border: 2px solid magenta;
+}
+
+.testinline{
+    display: inline;
+    color: white;
+    background-color: blue;
+    border: 2px solid magenta;
+}
+
+.testinlineblock{
+    display: inline-block;
+    color: white;
+    background-color: green;
+    border: 2px solid magenta;
+    height: 50px;
+}
+
+.staticposition{
+    position: static;
+    /* static position is default so i write it or not doesnt matter */
+    color: black;
+    background-color: red;
+    border: 4px green solid;  
+}
+
+.relativeposition{
+    position: relative;
+    color: black;
+    top: 15px;
+    left: 20px;
+    background-color: pink;
+    border: 4px green solid;
+}

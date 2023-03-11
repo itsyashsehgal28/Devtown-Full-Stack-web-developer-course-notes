@@ -1,0 +1,111 @@
+/* HOVER state is when we move cursor over the button */
+button:hover{
+    color: blue;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* ACTIVE state is when we click on the button it gets activated / hold left mouse button it keeps showing */
+button:active{
+    border: 5px solid red;
+}
+
+/* FOCUS state is after clicking on the button stating we have visited that link or button has been clicked before*/
+button:focus{
+    background-color: yellow;
+    color: rgb(23, 23, 98);
+}
+
+
+/* anchor hover effect */
+a:hover{
+    cursor: progress;
+}
+
+/* anchor tag when not visited will show CSS styling with link tag */
+a:link{
+    border: 2px solid red;
+}
+
+/* after even accessing once it will always show green even after reloading the page so we have to change the link to reset it */
+a:visited{
+    color: green;
+}
+
+span{
+    padding: 8px;
+    margin: 8px;
+    background-color: yellow;
+}
+
+/* for making changes to certain child tags we can either change id or class or use nth child */
+
+/* give a different id to it , it will work fine */
+/* #child1{
+    background-color: pink;
+} */
+
+/* but if we cannot change id or class then we make use of nth child */
+
+/* first child can be written for the first */
+span:first-child{
+    background-color: pink;
+}
+
+/* last child can be written for the last */
+span:last-child{
+    background-color: red;
+}
+
+/* we can also explicitly mention the child's number we can use 1 for first child also
+   writing 3 means the third child
+*/
+span:nth-child(3){
+    background-color: green;
+}
+
+/* if i say BOTH PROPERTIES FIRST CHILD AND NTH CHILD TO BE 1 THEN JO BHI LAST MAI LIKHI HOGI VO APPLY HOJAYEGI 
+   IN THIS CASE IF I SAY NTH CHILD 1 AFTER FIRST CHILD TOH NTH WALI PROPERTY APPLY HOGI */
+
+/* SELECTING EVEN CHILDS 2,4,6,8 */
+span:nth-child(even){
+    /* same with odd just write ODD instead of even */
+    background-color: aqua;
+}
+
+
+/* PSUEDO ELEMENTS- USED TO APPEND ELEMENTS BEFORE OR AFTER CONTENT IN HTML WITHOUT USING HTML */
+
+/* there should always be some content attribute when using psuedo elements like with absolute we need something relative */
+h4::before{
+    content: "hello " ;
+}
+
+h4::after{
+    content: " good morning";
+}
+
+.shape{
+    margin: 100px;
+    background-color: black;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    position: relative;
+}
+
+/* to display some small circle around it like a solar system types we need to use before or after */
+
+.shape::before{
+    height: 50px;
+    width: 50px;
+    background-color: yellow;
+    border-radius: 50%;
+    /* till here wont work because we dont have content so we keep content and keep it blank */
+    content: "";
+    /* this is there on inspect but its not shown so we also need positions  */
+    position: absolute;
+    /* with position we need some offsets like where it should be so */
+    left: 0;
+    top: 0;
+}

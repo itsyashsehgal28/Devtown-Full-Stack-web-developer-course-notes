@@ -1,0 +1,31 @@
+h2{
+    color: white;
+    background-color: black;
+}
+
+
+/* IN MAX WIDTH MAX SHOULD BE ON TOP
+   IN MIN WIDTH MIN SHOULD BE ON TOP
+*/
+
+
+/* SCREEN SIZE RANGE 400-800 PIXELS */
+@media only screen and (max-width: 800px){
+    h2{
+        background-color: pink;
+        color: red;
+    }
+}
+
+/* SCREEN SIZE RANGE 0-400 PIXELS */
+@media only screen and (max-width: 400px){
+    h2{
+        background-color: black;
+        color: blue;
+    }
+
+}
+
+/* ALWAYS write MAXIMUM WIDTH AT THE FIRST JAISE IDENTIFIER MAI BAAD MAI JO VALUE DEDO VO APPLY HOTI H VAISE HE HOJAYEGA VARNA 
+   HUMESHA FER LAST WALA HE CHALEGA TOH KARO AISE KI PEHLE BADI NA CHALE TOH CHOTI FER AUR CHOTI
+ */

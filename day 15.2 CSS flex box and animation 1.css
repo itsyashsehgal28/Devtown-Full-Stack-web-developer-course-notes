@@ -1,0 +1,76 @@
+h4{
+    color: red;
+}
+
+/* .parent{
+    background-color: black;
+}
+
+.child{
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+} */
+
+/* if i write like above parent and child without flex they take block scope but if i add display flex it wraps up them */
+
+.parent{
+    height: 350px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    /* row is by default we also have column , row-reverse , column-reverse */
+    gap: 10px;
+    /* gap works margin doesnt */
+    justify-content: center; 
+    /* justify content is for row wise */
+    align-items: center;
+    /* NOW ITS IN CENTER FOR X-AXIS AS WELL AS Y-AXIS */
+    /* align items is for columns */
+    flex-wrap: wrap;
+}
+
+.child{
+    background-color: white;
+    height: 100px;
+    width: 100px;
+    border: 4px red solid;
+    flex: 1;
+}
+
+
+ #child2{
+    background-color: white;
+    height: 100px;
+    width: 100px;
+    border: 4px red solid;
+    flex: 2;
+    /* this flex is used for ratio of area so area twice of normal */
+}
+
+button{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    font-size: large;
+    font-weight: 600;
+    /* this is boldness */
+    font-family: 'Times New Roman', Times, serif;
+
+    /* transition properties */
+    transition-delay: 1000ms;
+    /* delay in transition aayega time lega */
+    transition-duration: 1000ms;
+    /* kitni der tak rahega */
+    transition-timing-function: ease-out;
+    /* transition-property: none; */
+    /* none means saari property transition wali hatt jayegi */
+}
+
+button:hover{
+    /* psuedo classes */
+    background-color: aqua;
+    color: black;
+    cursor: pointer;
+}

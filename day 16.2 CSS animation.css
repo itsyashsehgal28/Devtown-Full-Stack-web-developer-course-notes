@@ -1,0 +1,43 @@
+.box{
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    /* view width and view height is with respect to the whole screen so 100% height and 100% width */
+}
+
+.ball{
+    background-color: yellow;
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+}
+
+.ball:hover{
+    animation: moveball 5s ease-in forwards;
+}
+
+@keyframes moveball {
+    25%{
+        transform: translate(400%,0);
+        /* x y coordinate , move 400% to right on x and 0 on y */
+        background-color: red;
+    }    
+    50%{
+        transform: translate(400%,400%);
+        /* y moves it downward so downward 400 and length 400 */
+        border-radius: 25%;
+        
+    }
+    75%{
+        transform: translate(0 , 400%);
+        /* length 0 downward 400 */
+        border-radius: 50%;
+    }
+    100%{
+        transform: translate(0,0);
+        /* back to default ye na bhi likhu toh bhi chalega */
+        background-color: pink;
+    }
+
+
+}
