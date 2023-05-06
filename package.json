@@ -1,0 +1,21 @@
+{
+  "name": "devtown-class",
+  "version": "1.0.0",
+  "description": "trial",
+  "main": "day36node.js",
+  "scripts": {
+    "start": "node day36node.js",
+    "yash": "node day36node.js" ,
+    "dev" : "nodemon day36node.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/itsyashsehgal28/Devtown-Full-Stack-web-developer-course-notes.git)"
+  },
+  "author": "Yash sehgal",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
+
