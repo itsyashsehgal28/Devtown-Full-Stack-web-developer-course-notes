@@ -2,11 +2,11 @@
   "name": "devtown-class",
   "version": "1.0.0",
   "description": "trial",
-  "main": "day36node.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node day36node.js",
-    "yash": "node day36node.js" ,
-    "dev" : "nodemon day36node.js"
+    "start": "node server.js",
+    "yash": "node server.js",
+    "dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -16,6 +16,6 @@
   "license": "ISC",
   "dependencies": {
     "nodemon": "^2.0.22"
-  }
+  },
+  "devDependencies": {}
 }
-
