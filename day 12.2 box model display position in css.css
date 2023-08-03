@@ -3,6 +3,7 @@ h3{
     background-color: black;
     border: 2px solid red;
     padding: 0 0 0 15px;
+    /* works clockwise top right bottom left */
     /* this is for left padding or i could have used left padding only (the property) */
     margin: 10px 0 0 0;
     /* this is for top margin or i could have used top margin only (the property) */

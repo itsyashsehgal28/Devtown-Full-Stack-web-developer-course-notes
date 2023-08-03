@@ -14,6 +14,9 @@
 
 .ball:hover{
     animation: moveball 5s ease-in forwards;
+    /* moveball is a user defined transition so we have to define it later 
+       moveball for 5s ease-in transition and move forward
+    */
 }
 
 @keyframes moveball {
@@ -38,6 +41,19 @@
         /* back to default ye na bhi likhu toh bhi chalega */
         background-color: pink;
     }
+
+    /* 
+    
+            (0,0)-----------------------------------(400,0)
+             |                                           |
+             |                                           |
+             |                                           |
+             |                                           |
+             |                                           |
+             |                                           |
+            (0,400)--------------------------------(400,400)    
+    
+    */
 
 
 }

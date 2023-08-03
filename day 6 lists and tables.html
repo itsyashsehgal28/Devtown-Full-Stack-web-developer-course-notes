@@ -4,23 +4,31 @@
     </head>
 
     <body>
-        <!-- types of lists:
-            >> ordered lists 
-            >> unordered lists
-            >> descriptive / description lists
-         -->
+        <h2>
+            Types of Lists:
+        </h2>
 
-         Ordered lists:
+        <h3>
+            >> ordered lists <br>
+            >> unordered lists<br>
+            >> descriptive / description lists
+        </h3>
+
+        <h3>Ordered lists:</h3>
         <ol type="A" , start="5">   <!--type : 1(default) || A || a || I(roman) || i(small roman)   START means from which position-->
+            <!-- ol means ordered list , li means list items -->
             <li>padai</li>
             <li>exam</li>
             <li>job</li>
         </ol>
+
+
         <br/>  <!---for a new line -->
         <hr/>  <!---for a horizontal line -->
 
-        Unordered Lists:
+        <h3>Unordered Lists:</h3>
         <ul>
+            <!-- ul means unordered list -->
             <li>yash</li>
             <li>shagun</li>
             <li>sehgal</li>
@@ -28,11 +36,11 @@
         <br/>
         <hr/>
     
-        Nested ordered list
+        <h3>Nested ordered list :</h3>
         <ol>
             <li>outer one</li>
             <li>outer two</li>
-                <ol>
+                <ol type="i">
                     <li>inner one</li>
                     <li>inner two</li>
                 </ol>
@@ -42,13 +50,23 @@
         <br/>
         <hr/>
 
-        Description or descriptive lists
+        <h3>Description or descriptive lists : </h3>
         <dl>
-            <dt style="text-decoration: underline;"">HTML</dt> <!--description term , this is inline css-->
-            <dd>Hyper Text Markup Language</dd> <!--description definition-->
+            <!--dl --- descriptive list : name of the type of list 
+                dt --- descriptive term : the term which is described 
+                dd --- descriptive definition : the definition of the described term     
+            -->
+            <dt style="text-decoration: underline">HTML</dt> <!-- this is inline css-->
+            <dd>Hyper Text Markup Language</dd>
 
             <dt>CSS</dt>
-            <dd>Cascading Style Sheets</dd> <!-- TYPES : inline , internal , external css-->
+            <dd>Cascading Style Sheets</dd> 
+            <!-- 
+                TYPES of CSS : 
+                Inline   : in the same line 
+                Internal : in the html file 
+                External : in a different file , linked to this file 
+            -->
 
             <dt>JS</dt>
             <dd>javascript</dd>
@@ -57,29 +75,35 @@
         <br/>
         <hr/>
 
-        Tables
-        <table border="1" , style="border-collapse: collapse;">
-            <tr> <!--table row-->
+        <h3>Tables</h3>
+        <table border="2" , style="border-collapse: collapse">
+            <tr> <!--table row--> 
+                <!-- This is the first row , it contains headings -->
                 <th>first</th>  <!--table heading || COLUMN HEADINGS-->
                 <th>second</th>
                 <th>third</th>
             </tr>
-            <tr>
+
+
+            <tr> 
+                <!-- second row -->
                 <td rowspan="2">one</td> <!--table data || COLUMNS-->
                 <td colspan="2">two</td>
                 <td>three</td>
             </tr>
+
+
             <tr>
+                <!-- third row  -->
                 <td colspan="1" >four</td>
             </tr>
             <tr>
                 <td>five</td>
-                <td colspan="2">six</td>
+                <td colspan="2" style="text-align: center;">six</td>
+                <!-- align="center" we cant write like this same with border in line 79 but left like this for example -->
+                <!-- its showing in red because its not allowed or not a good way  -->
             </tr>
         </table>
-
-
-
 
     </body>
 

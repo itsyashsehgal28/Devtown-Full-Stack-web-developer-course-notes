@@ -26,6 +26,11 @@ h2{
 
 }
 
+/*
+     value will be updated if we write in reverse order , jo last aayegi vo value lelega 
+    a = 5 , then i write later a = 10 so a will be 10 because it got updated same scene applies here also 
+*/
+
 /* ALWAYS write MAXIMUM WIDTH AT THE FIRST JAISE IDENTIFIER MAI BAAD MAI JO VALUE DEDO VO APPLY HOTI H VAISE HE HOJAYEGA VARNA 
    HUMESHA FER LAST WALA HE CHALEGA TOH KARO AISE KI PEHLE BADI NA CHALE TOH CHOTI FER AUR CHOTI
  */

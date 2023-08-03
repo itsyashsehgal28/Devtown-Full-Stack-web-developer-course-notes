@@ -5,24 +5,21 @@ where we select the element like <h2>This is an H2 tag - count 1</h2> is an elem
 /* h2{
     color: yellow;
     background-color: black;
-} */
-
-/*
+}
 p{
     color: yellow;
     background-color: black;
-} 
-*/
+}  */
+
 
 
 
 /* 2. ELEMENT SELECTOR LIST 
-IS WHEN YOU SELECT A NUMBER OF ELEMENTS ALWAYS SEPERATED WITH COMMAS (,) 
-*/
-/* h2,p{
+IS WHEN YOU SELECT A NUMBER OF ELEMENTS ALWAYS SEPERATED WITH COMMAS (,) */
+h2,p{
     color: yellow;
-    background-color: black;
-} */
+    background-color: magenta;
+}
 
 
 
@@ -34,24 +31,26 @@ if we use body tag we only have 1 border because there is only 1 body but if we 
     >>one for element tag
 */
 
-/* 
-*{
+
+/* *{
     color: red;
     background-color: black;
-    border: 2px solid white;
-     solid dashed and dotted , px is pixel for width of the border 
-}
-*/
+    border: 2px solid white; 
+} */
 
+/* Types Of Borders : solid dashed and dotted , px is pixel for width of the border */
+
+/* element selector > universal selector */
 
 
 /* 4. ID SELECTOR (#) */
-/* #H2COUNT3{
+#h2count3{
     color: pink;
     background-color: black;
-    border: 2px dotted green;
-} */
+    border: 6px dotted green;
+}
 
+/* id selector > element selector > universal selector */
 
 /* 5. CLASS SELECTOR (.) */
 .H2CLASS{
@@ -63,6 +62,12 @@ if we use body tag we only have 1 border because there is only 1 body but if we 
     border-radius: 50%;
 }
 
+/* WHAT HAPPENED HERE IS : SAARI PROPERTIES JO MATCH KAR RHI THI ID AND CLASS MAI VAHA ID PREVAILED AND ALL OTHER EXTRA 
+   QUALITIES WHICH WERE IN CLASS WERE APPLIED TO THE H2 TAG ALSO 
+*/
+
+/* id selector > class selector > element selector > universal selector */
+
 /* UNITS IN CSS
     >> PIXELS (PX)
     >> PERCENTAGE(%)
@@ -73,30 +78,36 @@ if we use body tag we only have 1 border because there is only 1 body but if we 
 */
 
 
-/* 6. DESCENDANT SELECTOR LIST */
+/* 6. DESCENDANT SELECTOR LIST : IN THIS WE REFER TO FIRST THE PARENT TAG THEN THE CHILD TAG ON WHICH WE WANT TO APPLY CSS */
+
 li a {
-    /* parent tag is li so items inside li that are anchor tag */
     color: blue;
     background-color: pink;
+    text-decoration: none;
 }
 
-/*
- b i{
+/* parent tag is li so items inside li that are anchor tag */
+
+/* b i{
     color: white;
     background-color: black;
-}
+} */
 
 
 i{
     color: white;
     background-color: pink;
 }
-*/
+
+/* SINCE I ALONE IS ELEMENT TAG BUT b I WHICH IS DESCENDANT SELECTOR PREVAILS HENCE */
+
+/* id selector > class selector > descendant selector list > element selector > universal selector */
+
 
 /* 7. DIRECT CHILD (>) */
 b > i{
-    color: white;
-    background-color: black;
+    color: red;
+    background-color: grey ;
 }
 
 /* NO STYLE WILL BE APPLIED BECAUSE I IS NOT A DIRECT CHILD OF BOLD TAG */
@@ -108,9 +119,11 @@ h4{
 }
 
 h6{
-    /* PADDING IS FOR THE INSIDE OF THE BOX  SPACE FROM THE INSIDE */
     border: 2px solid black;
-    /* padding: 20px; this is from all directions*/
+    /* PADDING IS FOR THE INSIDE OF THE BOX  SPACE FROM THE INSIDE */
+   
+    /* padding: 20px; */
+    /* this is from all directions*/
     /* we can also have padding from specific directions */
     
     /* padding-top: 5px;

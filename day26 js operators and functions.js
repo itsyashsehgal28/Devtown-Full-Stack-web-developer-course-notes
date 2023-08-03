@@ -34,6 +34,8 @@ console.log(aa);
 var bb=10;
 console.log("Pre increment operator ",++bb);
 
+// in pre value of variable will be updated instantly while in post it will be updated after being used once 
+
 
 // IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT IMPORTANT 
 
@@ -41,13 +43,13 @@ console.log("Pre increment operator ",++bb);
 a=5;
 b=5;
 console.log("normally : ",a==b);
-// == operator checks values and replies in boolean 
+// == operator checks values and replies in boolean (true or false)
 
 // DISADVANTAGE OF == OPERATOR
 b="5";
 console.log("datatype change results in same answer :",a==b);
 console.log("with not operator :" , a!=b);
-// this will still result in true value instead of one being NUMBER and other being a STRING
+// this will still result in true value instead of one being a NUMBER and other being a STRING
 
 
 // HENCE == ONLY CHECKS THE VALUE NOT THE DATATYPE SO WE HAVE === WHICH ALSO CHECKS THE DATATYPE 
@@ -78,8 +80,9 @@ age=20;
 
 // we can also write like
 age>18
-? console.log("Eligible with ternary operator")
+? console.log("Eligible with ternary operator") 
 : console.log("Eligible with ternary operator");
+// (condition) ? if true this statement : if false this statement 
 
 
 
@@ -123,7 +126,7 @@ sum(5,5);
 
 var sum = (a,b) => {
     console.log(a+b);
-    // in one liner functions we need not have the {} also we can remove them in one liners
+    // in one liner functions we need not have the {} 
 }
 sum(5,5);
 

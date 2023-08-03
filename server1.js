@@ -54,7 +54,7 @@ http.createServer((req, res) =>
                 // POST means sending something from server to body mai likho THUNDER CLIENT PE
                 // {"name" : "yash"} aur send kardo
                 let body = "";
-                // on method for events toh error , data end are events fer uske variables aur ek callback function
+                // on method is for events toh error , data , end are events fer uske variables aur ek callback function
                 req.on('error' , (err) => {
                     console.log(err);
                     // logging everything 
@@ -158,7 +158,7 @@ http.createServer((req, res) =>
         
         else {
             res.writeHead(404);
-            // code for ERROR NPT FOUND
+            // code for ERROR N0T FOUND
         }
 
 
@@ -177,7 +177,7 @@ http.createServer((req, res) =>
     /*
         compulsary for checking if server is working fine or not server busy nhi hoga toh it will listen otherwise not 
         It will write on terminal ki pta chale haan kaam chl rha h 
-        netstat - ano CMD PE DALO PTA CHALEGA KONSA PORT FREE H FOR YOUR PC
+        netstat - ano          CMD PE DALO PTA CHALEGA KONSA PORT FREE H FOR YOUR PC
     */
 });
 

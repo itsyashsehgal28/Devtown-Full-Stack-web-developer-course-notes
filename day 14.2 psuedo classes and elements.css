@@ -17,12 +17,14 @@ button:focus{
 }
 
 
-/* anchor hover effect */
+/* anchor tag hover effect */
 a:hover{
     cursor: progress;
 }
 
-/* anchor tag when not visited will show CSS styling with link tag */
+/* anchor tag WHEN NOT VISITED EVEN ONCE will show CSS styling with link tag 
+   link represents a psuedo class that has not been visited
+*/
 a:link{
     border: 2px solid red;
 }
@@ -49,12 +51,14 @@ span{
 
 /* first child can be written for the first */
 span:first-child{
-    background-color: pink;
+    background-color: red;
 }
 
+/* id > nth child */
+
 /* last child can be written for the last */
-span:last-child{
-    background-color: red;
+span :last-child{
+    background-color: blue;
 }
 
 /* we can also explicitly mention the child's number we can use 1 for first child also

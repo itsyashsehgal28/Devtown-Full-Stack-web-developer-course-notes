@@ -9,12 +9,10 @@ var mypromise = new Promise(function (resolve , reject){
         resolve("Success");
     },5000);
 
-    setTimeout(function(){
-        reject("first fail");
-    },3000);
+    
 
 });
-// this was a normal promise but we wont write then and catch
+// this was a normal promise but we won't write then and catch
 
 var getOurPromise = async() => {
     var getOurPromiseResult = await mypromise;
@@ -34,7 +32,11 @@ var mypromise2 = new Promise(function (resolve , reject){
         resolve("Success2");
     },3000);
 
-    reject("last fail");
+    setTimeout(function(){
+        reject("last fail");
+    } , 5000);
+    
+    // reject("last fail");
 });
 
 var getOurPromise = async() => {
@@ -49,3 +51,6 @@ var getOurPromise = async() => {
 }
 
 getOurPromise();
+
+
+// in 1 promise answer is given to whichever is executed first 

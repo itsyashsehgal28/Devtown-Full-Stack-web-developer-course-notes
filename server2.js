@@ -1,5 +1,6 @@
 const express = require("express");
 // using express
+// first install express too 
 
 const port = 8081;
 
@@ -16,6 +17,8 @@ app.use(express.json());
 app.get("/todos" , (req , res) => {
     res.status(200).send(todolist);
 });
+// status 200 means ok 
+// as a response we will send the data of todolist which is : yash is best ---- will be displayed on UI
 
 
 /*                                              BEFORE WE USED TO WRITE THIS
@@ -43,6 +46,7 @@ app.delete("/todos" , (req , res) => {
     todolist.find((elem , index) => {
         if (elem === deleteItem){
             todolist.splice(index , 1);
+            // splice cuts or deletes data from given index to how many values need to be deleted in next variable ,here 1 value deleted
         }    
     });
     res.status(202).send({Message : `Deleted Item ${req.body.item}`});
@@ -52,8 +56,10 @@ app.all("*" , (req , res) => {
     // all contains all methods GET POST DELETE etc.  
     //  * means for all routes 
     res.status(501).send();
+    // 501 means not implemented
 })
 
 app.listen(port , () => {
     console.log(`Server started running on port ${port}`)
+    // if port is free this comes on the terminal 
 });

@@ -4,15 +4,18 @@ h4{
 
 /* .parent{
     background-color: black;
+    color: white;
 }
 
 .child{
     background-color: blue;
+    color: white ;
     height: 100px;
     width: 100px;
 } */
 
 /* if i write like above parent and child without flex they take block scope but if i add display flex it wraps up them */
+
 
 .parent{
     height: 350px;
@@ -55,8 +58,10 @@ button{
     margin: 20px;
     font-size: large;
     font-weight: 600;
-    /* this is boldness */
-    font-family: 'Times New Roman', Times, serif;
+    /* 
+        this is boldness 
+        font-family: 'Times New Roman', Times, serif; 
+    */
 
     /* transition properties */
     transition-delay: 1000ms;
@@ -64,7 +69,7 @@ button{
     transition-duration: 1000ms;
     /* kitni der tak rahega */
     transition-timing-function: ease-out;
-    /* transition-property: none; */
+    transition-property: none;
     /* none means saari property transition wali hatt jayegi */
 }
 
