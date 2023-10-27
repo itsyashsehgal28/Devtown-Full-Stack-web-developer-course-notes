@@ -17,6 +17,11 @@ app.use(express.json());
 app.get("/todos" , (req , res) => {
     res.status(200).send(todolist);
 });
+
+
+// app.method("url" , (req, res)=> {}
+
+
 // status 200 means ok 
 // as a response we will send the data of todolist which is : yash is best ---- will be displayed on UI
 

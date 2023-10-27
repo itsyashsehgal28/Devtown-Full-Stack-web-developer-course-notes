@@ -9,15 +9,45 @@ const todolist = ["yash" , "is" , "best"];
 // a normal array of objects
 
 
+/*  
+    http://localhost:8081/
+    http://localhost:8081/todos
+    ---> TCP - TRANSMISSION CONTROL PROTOCOL - transfers data together
+    ---> UDP - USER DATAGRAM PROTOCOL - transfers data in chunks http alag , localhost alag , 5501 alag   
+    ---> i changed package.json -----> script mai , waha maine jaise isse start kar rha tha vo likha "node day36node.js"
+    ---> so now i only need to write ------> npm start to start the server vo khud he call karlega
+    ---> NPM --> NODE PACKAGE MANAGER toh start is a package NOW
+*/
+
+/*
+    http://localhost:5501/home
+    http://localhost:5501/aboutUs
+    http://localhost:5501/signIn
+    THE HOME , ABOUTUS , SIGNIN ARE CALLED ROUTES , THE WEBSITE WILL FOLLOW BASED ON CERTAIN CLICKS
+*/
+
+/*
+    HTTP METHODS
+    >> GET - get data from the server 
+    >> POST - send data to the server  
+    >> DELETE - delete some data from the database
+    >> PATCH - updation of some fields
+    >> PUT - full update / updation of many fields
+    
+    WE WON'T BE STORING DATA ON THE SERVER , VO KAAM DATABASE KA H 
+*/
+
+
+
 http.createServer((req, res) => 
 // req = request , res - response
 {
     /*
         res.writeHead(200 , {"Content-Type": "Text/Html"});
-        // 200 means okay or success 
-        // 404 means not found 
+         200 means okay or success 
+         404 means not found 
         res.write("<h2>Hey server started u can proceed :)</h2>");
-        // whats the response you want to show , write on page this response 
+         whats the response you want to show , write on page this response 
         res.end();
     */
     
@@ -51,8 +81,8 @@ http.createServer((req, res) =>
             
             else if (method === "POST")
             {
-                // POST means sending something from server to body mai likho THUNDER CLIENT PE
-                // {"name" : "yash"} aur send kardo
+                // POST means sending something from server toh body mai likho THUNDER CLIENT PE
+                // {"item" : "at loving shagun"} aur send kardo
                 let body = "";
                 // on method is for events toh error , data , end are events fer uske variables aur ek callback function
                 req.on('error' , (err) => {
@@ -72,7 +102,7 @@ http.createServer((req, res) =>
                     // newToDo variable stores value from todolist
                     newToDo.push(body.item);
                     // item is a KEY uske saath wali value gets appended in todolist
-                    console.log(todolist);
+                    console.log(newToDo);
 
 
                     // THIS IS USED TO SEND / ADD INFORMATION FROM SERVER TO BROWSER
@@ -181,31 +211,3 @@ http.createServer((req, res) =>
     */
 });
 
-
-/*  
-    http://localhost:8081/
-    http://localhost:8081/todos
-    ---> TCP - TRANSMISSION CONTROL PROTOCOL - transfers data together
-    ---> UDP - USER DATAGRAM PROTOCOL - transfers data in chunks http alag , localhost alag , 5501 alag   
-    ---> i changed package.json -----> script mai , waha maine jaise isse start kar rha tha vo likha "node day36node.js"
-    ---> so now i only need to write ------> npm start to start the server vo khud he call karlega
-    ---> NPM --> NODE PACKAGE MANAGER toh start is a package NOW
-*/
-
-/*
-    http://localhost:5501/home
-    http://localhost:5501/aboutUs
-    http://localhost:5501/signIn
-    THE HOME , ABOUTUS , SIGNIN ARE CALLED ROUTES , THE WEBSITE WILL FOLLOW BASED ON CERTAIN CLICKS
-*/
-
-/*
-    HTTP METHODS
-    >> GET - get data from the server 
-    >> POST - send data to the server  
-    >> DELETE - delete some data from the database
-    >> PATCH - updation of some fields
-    >> PUT - full update / updation of many fields
-    
-    WE WON'T BE STORING DATA ON THE SERVER , VO KAAM DATABASE KA H 
-*/

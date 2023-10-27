@@ -1,0 +1,11 @@
+{
+  "name": "5.-react.js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "day 48 intro to react.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
