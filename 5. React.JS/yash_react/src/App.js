@@ -1,4 +1,4 @@
-import './App.css';
+import './App.css'; // no need rn
 import ClassComponent from './components/ClassComponent';
 import FunctionalComponent from './components/FunctionalComponent';
 function App() {

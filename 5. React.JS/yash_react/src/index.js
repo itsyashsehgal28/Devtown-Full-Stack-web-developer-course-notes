@@ -8,8 +8,10 @@ import './index.css';
 // importing css file
 
 import App from './App'; 
-// importing app.js file , no need to write App.js only App also works fine
+// importing app.js file , no need to write App.js only App works fine
+
 import reportWebVitals from './reportWebVitals';
+// not checking vitals so we can remove it but rehnede cause ptani kyu chl nhi rha uske bina
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // this root is present in HTML file , all things we change in App.js will be reflected in root tag of HTML page

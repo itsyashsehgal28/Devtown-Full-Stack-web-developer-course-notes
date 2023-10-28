@@ -1,3 +1,42 @@
+# STARTING WITH THE PROJECT 
+
+>> cd '.\5. React.JS\'
+>> cd yash_react
+>> npm start
+
+# Workflow Starts from INDEX.JS ----> APP.JS ----> INDEX.HTML
+>> App.js is a functional component since there is a function
+>> functional Component ---> function function_name () {}
+
+>>
+
+# Files will be in .jsx format - Html + JS 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -70,19 +109,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 
-# STARTING WITH THE PROJECT 
-
->> cd '.\5. React.JS\'
->> cd yash_react
->> npm start
-
-# Workflow Starts from INDEX.JS ----> APP.JS ----> INDEX.HTML
->> App.js is a functional component since there is a function
->> functional Component ---> function function_name () {}
-
->>
-
-# Files will be in .jsx format - Html + JS 
-
-# States is where the components will store certain informations
-# Props is used to pass certain information to the components
