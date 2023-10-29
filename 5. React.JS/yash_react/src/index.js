@@ -4,6 +4,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 // ReactDom from packages because we won't be using normal DOM since it reloads all the page again not specific components
 
+import {BrowserRouter} from 'react-router-dom' ;
+// this is for ROUTING (day 50)
+
 import './index.css';
 // importing css file
 
@@ -21,7 +24,10 @@ root.render(
   // we are saying root.render hence our html page id root will render the files stored in App.js that's why we are seeing 
   // it on the screen , rendering means fetching 
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+        <App />
+    </BrowserRouter>
+    {/* app is enclosed within BrowserRouter because index is parent of app */}
   </React.StrictMode>
   // strict mode is a type of condition of react 
 );
