@@ -22,7 +22,7 @@
                 setName={setName} 
                 age={20} />}/>
 
-                    before ending the braces we write the parameters of the function
+                    before ending the braces we write the props or the parameters of the function
         </Routes>
 */
 
@@ -37,10 +37,10 @@
         
         but in all these pages what we have in common is : 
                 footer      navbar      
-        
-        These are called Layouts its called HIGH ORDER COMPONENT or HOC
 
         we will be making a seperate file for layouts so that theres no redundant data and build logics in that folder
+
+        These are called Layouts its called HIGH ORDER COMPONENT or HOC
 
         HOCs can add additonal info/features to existing components
 

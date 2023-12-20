@@ -3,7 +3,7 @@ import ClassComponent from './pages/ClassComponent';
 import FunctionalComponent from './pages/FunctionalComponent';
 import { useState } from 'react';
 import { Routes , Route} from 'react-router-dom';
-import BaseHoc from './hoc/baseHoc'; // HOC layout 
+import BaseHoc from './hoc/BaseHoc'; // HOC layout 
 
 
 function App() {

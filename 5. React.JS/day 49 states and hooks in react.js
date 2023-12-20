@@ -61,6 +61,8 @@ CHECKOUT THE FUNCTIONAL COMPONENT FOR PRACTICAL EXAMPLE
     PROPS : if we want to pass information from one component to other component or one function to other function or
             one class to another class etc. we use PROPS
 
+            works like a parameter , props are passes from component call to where the component is defined 
+
             basically like DTO we will be passing data among the components
 
             data goes from parent node ---> child node , uni directional not bi directional
@@ -72,4 +74,3 @@ CHECKOUT THE FUNCTIONAL COMPONENT FOR PRACTICAL EXAMPLE
                 NOTE: PROPS CANT HAVE A NORMAL NUMBER YOU HAVE TO WRAP IT IN CURLY BRACES {} , STRINGS ARE ALLOWED NORMALLY 
                       SINCE THEY ARE ALREADY ENCLOSED WITHIN DOUBLE QUOTES ""  
 */
-

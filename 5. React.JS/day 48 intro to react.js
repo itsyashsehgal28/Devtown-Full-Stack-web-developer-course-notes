@@ -27,7 +27,7 @@
     dont let us waste this time by dividing the page into components , different components , it will only provide 
     that component which is needed at that time or rendering only those things that are needed 
 
-    Eg: Gmail , Instagram
+    Eg of SPA: Gmail , Instagram
 */
 
 
@@ -35,13 +35,13 @@
     THINGS WE HAVE IN REACT :
 
     --->    Components   : Group Codes together to form components
-                           think of this like your folders or different files like a component for aboutus , contactus etc.
+                           think of this like your folders or different files like a component for heroCarousel , banners etc.
                            
                            There are 2 ways for declaring components : 
                            >> Class Components : Older Version
                            >> Function Components : Newest Version
                            
-                           (Syntax differs a bit in both nothing else )
+                           (Syntax differs a bit in both nothing else , functional components are easy )
 
 
     --->    Data Binding : Binding Data With respect to your component 
@@ -61,7 +61,11 @@
                            it will manage local storage
 
 
-    --->    Hooks :        LifeCycle Methods 
+    --->    Hooks :        
+    
+    
+    --->    LifeCycle Methods : 
+                           
                            like in components we have stages :
                            >> when it was created
                            >> when it was updated 

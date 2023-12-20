@@ -1,4 +1,5 @@
 import React , {useState} from "react";
+import BaseHoc from "../hoc/BaseHoc";
 
 /*
     function FunctionalComponent() {
@@ -48,7 +49,11 @@ import React , {useState} from "react";
     }
 
 // when we use JS inside of html we use {}
-export default FunctionalComponent ; 
+
+
+// export default FunctionalComponent ;
+// since we now use basehoc this component is a parameter to that function 
+export default BaseHoc(FunctionalComponent); 
 
 /*
     RECAP OF WHAT HAPPENED : 

@@ -1,7 +1,13 @@
-import react from 'react' ;
+import React from 'react' ;
 
-const BaseHoc = () => {
-
+const BaseHoc = (component) => ({...props}) =>{
+    return(
+        <div>
+            <h2>lets suppose this is navbar</h2>
+            <component {...props}/>
+            <h2>and then this is our footer which is also redundant code </h2>
+        </div>
+    )
 };
 
 export default BaseHoc ;
